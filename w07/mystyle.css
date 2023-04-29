@@ -1,0 +1,60 @@
+/* mystyle.css */
+h1 {
+    font-size: 55px;
+    text-align: center;
+    border-bottom: 3px gray solid;
+    padding: 20px;
+    margin: 0px;
+}
+
+#grid ol {border-right: 3px gray solid;
+    width: 100px;
+    padding: 20px;
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 160px 2fr;
+}
+
+/* Desktop */
+@media screen and (max-width: 1920px) {
+
+}
+
+/* Tablet */
+@media screen and (min-width:768px) and (max-width: 1919px) {
+    #grid{
+        display: block;
+    }
+    #grid ol{
+        border-right: none;
+    }
+    h1{
+        border-bottom: none;
+        font-size: 35px;
+    }
+}
+/* Mobile */
+@media screen and (min-width:320px) and (max-width: 767px) {
+    #grid{
+        display: block;
+    }
+    #grid ol{
+        border-right: none;
+    }
+    h1{
+        border-bottom: none;
+        font-size: 10px;
+        text-align: left;
+    }
+}
+
+데스크톱 : 1920 x 1080
+태블릿 : 768 x 1024
+모바일 : 320 x 480 
