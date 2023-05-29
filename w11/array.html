@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1>아이즈원</h1>
+    <h2>걸그룹</h2>
+    <h3>아이돌</h3>   
+    <ul>
+    <script>
+        const nameList = ["권은비", "사쿠라", "강혜원", "최예나", "나코", "김채원", "장원영", "안유진", "히토미", "김민주", "이채연"];
+        const imgList = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg", "11.jpg"];
+        var i = 0;
+        while(i < nameList.length){
+            document.write('<li><a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=%EC%95%84%EC%9D%B4%EC%A6%88%EC%9B%90' + nameList[i] + '">' + nameList[i] + '</li>');
+
+            document.write(
+            '<img src="' +
+              imgList[i] +
+              '" width="30%">'
+          );
+          i = i + 1;
+        }    
+    </script>
+  </ul>
+ </body>
+</html>
