@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>뉴진스(NewJeans)</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/master.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+
+<body style="background-color: black; color: white;">
+  <h1><a href="index.html">뉴진스(NewJeans)</a></h1>
+  <div id="grid">
+    <ol>
+        <li><a href="1.html">INTRODUCTION</a></li>
+        <li><a href="2.html">MEMBER</a></li>
+        <li><a href="3.html">ALBUM</a></li>
+    </ol>
+    <div>
+      <input id="night_day_1" type="button" value="day" onclick="nightDayHandler(this)"/>
+
+      <h2>MEMBER</h2>
+      <ul>
+        <script>
+            const nameList = ["민지", "하니", "다니엘", "해린", "혜인"];
+            const imgList = ["images/민지.jpeg", "images/하니.jpeg", "images/다니엘.jpeg", "images/해린.jpeg",  "images/혜인.jpeg" ];
+            var i = 0;
+            while(i < nameList.length){
+                document.write('<li><a href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bjky&pkid=1&os=28564418&qvt=0&query=%EB%89%B4%EC%A7%84%EC%8A%A4' + nameList[i] + '">' + nameList[i] + '</li>');
+    
+                document.write(
+                '<img src="' +
+                  imgList[i] +
+                  '" width="30%">'
+              );
+              i = i + 1;
+            }    
+        </script>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
